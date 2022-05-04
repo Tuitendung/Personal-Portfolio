@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Glysa';
+    src: url('../font/Glysa-Medium.woff2') format('woff2'),
+        url('../font/Glysa-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+
+
+@font-face {
+    font-family: 'LEMON MILK';
+    src: url('../font/LEMONMILK-Light.woff2') format('woff2'),
+        url('../font/LEMONMILK-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'LEMON MILK';
+    src: url('../font/LEMONMILK-BoldItalic.woff2') format('woff2'),
+        url('../font/LEMONMILK-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display:fallback;
+}
+
+@font-face {
+    font-family: 'LEMON MILK';
+    src: url('../font/LEMONMILK-LightItalic.woff2') format('woff2'),
+        url('../font/LEMONMILK-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'LEMON MILK';
+    src: url('../font/LEMONMILK-Bold.woff2') format('woff2'),
+        url('../font/LEMONMILK-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'LEMON MILK';
+    src: url('../font/LEMONMILK-Medium.woff2') format('woff2'),
+        url('../font/LEMONMILK-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'LEMON MILK';
+    src: url('../font/LEMONMILK-MediumItalic.woff2') format('woff2'),
+        url('../font/LEMONMILK-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: fallback;
+}
+

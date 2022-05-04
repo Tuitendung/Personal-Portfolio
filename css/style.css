@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    cursor: none;
+
+}
+body{
+    background-color: black;
+    font-family:"Montserrat",sans-serif;
+    color:white;
+    position: relative;
+    cursor: none;
+    height: 100vh;
+    width: 100vw;
+    
+
+}
+
+
+    
+.intro span{
+    font-family:"Montserrat",sans-serif;
+    font-weight: 500;
+    letter-spacing: 10px;
+    
+    
+
+}
+
+.intro{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 1;
+    
+
+    
+}
+.hello{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    
+}
+.name{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: black;
+
+}
+
+
+
+.intro.display-none{
+    position: fixed;
+    top:-100vh;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: -1;
+    text-align: center;
+    line-height: 100vh;
+    transition:  all 1.5s;
+}
+.intro span{
+    opacity: 0;
+}
+ @keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeOut{
+    to{
+        opacity: 0;
+    }
+    
+      
+    
+}
+
+
+.hello.active{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    
+}
+
+.hello.fade{
+    opacity: 1;
+    animation:  fadeOut 1s ease-out forwards;
+
+}
+
+.name.active{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    
+}
+
+.name.fade{
+    opacity: 1;
+    animation:  fadeOut 1s ease-out forwards;
+
+}
+
+/* MENU */
+header{
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.container-fluid{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo{
+    width:100px;
+    height: 100px;
+    
+}
+.info{
+    padding-right: 27px;
+    color: white;
+}
+
+/* BANNER */
+/* .container{
+    max-width: 111.1rem;
+    margin-left: 170px;
+    position: relative;
+} */
+.banner{
+    /* position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%); */
+    font-family: 'Glysa';
+    position: relative;
+    
+
+    /* min-height: 100vh; */
+    padding: calc(100vh - 85vh) 4%;
+    top:-10vh;
+   
+
+
+}
+
+.banner-text-one{
+    font-size: calc(2.8vw + 2.8vh);
+    line-height: calc(5vw + 5vh);
+    text-align: center;  
+}
+.banner-text-two{
+    font-size: calc(2.8vw + 2.8vh);
+    line-height: calc(5vw + 5vh);
+    text-align: center;  
+}
+.cursor{
+    width:4px;
+    height:4px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 900;
+    pointer-events: none;
+
+}
+.cursorFollow{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    border:1px solid white;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 900;
+    pointer-events: none;
+    transition: 0.4s width, 0.4s height, 0.4s background;
+    mix-blend-mode: difference;
+}
+
+
+
+.cursorFollow.active{
+     width:150px;
+     height:150px;
+     background: white;
+     transition: 0.4s width, 0.4s height, 0.4s background; 
+
+}
+
+/* responsive */
+@media screen and (max-width: 576px){
+    .banner{
+        top:-10vh;
+
+    }
+    .hello{
+        font-size: 10px;
+    }
+    .name{
+        
+        font-size: 10px;
+    
+    }
+}
+
+@media screen and (max-width: 400px){
+    .hello{
+        font-size: 8px;
+    }
+    .name{
+        
+        font-size: 8px;
+    
+    }
+}
